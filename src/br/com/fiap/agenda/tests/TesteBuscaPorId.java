@@ -9,13 +9,13 @@ public class TesteBuscaPorId {
     public static void main(String[] args) {
         Scanner leitorNum = new Scanner(System.in);
 
-        Contato contato =new Contato();
+        Contato contato = new Contato();
         ContatoDAO dao = new ContatoDAO();
-        System.out.println("Consulta contato por ID");
-        System.out.println("=======================");
-        System.out.println("Dígite o id do contato");
+        System.out.println("===========Consulta por ID===========");
+        System.out.println("Digite o id do contato: ");
         int id = leitorNum.nextInt();
         contato = dao.buscarPorId(id);
+        System.out.println(contato);
 
     }
 }
